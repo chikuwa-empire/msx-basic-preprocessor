@@ -1,7 +1,13 @@
 # msx-basic-preprocessor（MSX-PTAN）
 MSX-BASICで行番号を書くのがめんどっちい人のための簡易プリプロセッサです。<br>
-ピータンと呼んでください。
+ピータンと呼んでください。<br>
+<br>
+構文解析はしていませんので簡易的なものです。<br>
+行番号の自動付与と、ラベルへのジャンプができます。<br>
+行頭の先頭*(アスタリスク)の文字列をジャンプ先ラベルとして識別します。<br>
+ジャンプ先のラベルの後にはスペースを入れて命令を書いてください。
 
+## 使い方
 ```
 USAGE: msx_ptan <INPUT FILE NAME> <OUTPUT FILE NAME> [<STARTING LINE NO>] [<INCREMENTAL>]
 ```
